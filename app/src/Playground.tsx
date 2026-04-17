@@ -1,4 +1,5 @@
-import { useState, CSSProperties } from 'react';
+import { useState } from 'react';
+import type { CSSProperties } from 'react';
 import { effects } from './effects';
 import type { EffectMeta } from './effects';
 
