@@ -1,6 +1,7 @@
 import type { ComponentType } from 'react';
 import LavaLamp from './LavaLamp';
 import GameOfLife from './GameOfLife';
+import Smoke from './Smoke';
 
 export interface EffectMeta {
   id: string;
@@ -30,5 +31,12 @@ export const effects: EffectMeta[] = [
     description: "Conway's cellular automaton on the GPU — cell age drives color",
     tags: ['compute', 'simulation', 'cellular automaton'],
     component: GameOfLife,
+  },
+  {
+    id: 'smoke',
+    name: 'Smoke',
+    description: 'Monochrome particle smoke — soft gaussian blobs that rise and drift',
+    tags: ['particles', 'compute', 'monochrome'],
+    component: Smoke,
   },
 ];
